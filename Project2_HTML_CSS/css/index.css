@@ -1,0 +1,80 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Candara Light";
+	line-height: 1.5;
+}
+
+nav, footer {
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background: lightgray;
+}
+
+nav {
+	background: none;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 10px;
+}
+
+header {
+	background: url('../images/banner.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+}
+
+.banner {
+	padding: 60px;
+	background: white;
+	opacity: 0.9;
+	width: 20%;
+	height: 400px;
+	font-family: sans-serif;
+}
+
+.title {
+	text-align: center;
+	margin: 50px;
+}
+
+.hobbies {
+	width: 80%;
+	margin: 0 auto 50px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+} 
+
+.hobby {
+	width: 20%;
+}
+
+.hobby-image {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.hobby-title, .hobby-text {
+	text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+	.banner {
+		display: none;
+	}
+
+	.hobby {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.hobby {
+		width: 100%;
+	}
+}
